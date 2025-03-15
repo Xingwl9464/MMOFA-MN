@@ -18,7 +18,7 @@ else % Linux or Mac
 end
 
 % Add DataSet folder and its subfolders to MATLAB work path
-paths = strsplit(path, separator);  % 使用正确的分隔符
+paths = strsplit(path, separator); 
 datasetPath = fullfile(currentDir, 'DataSet');
 if ~ismember(datasetPath, paths)
     addpath(genpath(datasetPath));
