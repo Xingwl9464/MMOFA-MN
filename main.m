@@ -36,10 +36,10 @@ end
 % run single problem / test-function
 %   param1: time     / When running the same test function independently, record the current number of times
 %   param2: n        / Population size
-%   param3: nEL      / Maximum external file capacity
-%   param4: tMax     / Maximum Number Of Iterations
+%   param3: tMax     / Maximum Number Of Iterations
+%   param4: nEL      / Maximum external file capacity
 %   param5: problem  / Test-function 
-mofa_new(1, 200, 200, 200, 'MMF2')
+mofa_new(1, 100, 200, 100, 'SYM_PART_rotated')
 
 % The running results are stored in a mat file, 
 % named in the format of 
